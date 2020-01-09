@@ -1,0 +1,24 @@
+list_all_js_function_names("/path/to/script.js")
+
+# this should return
+
+['promptUser','Array.prototype.memory_card_shuffle']
+
+Step1:
+1. Read into the js file.
+2. SAVE content of the file (x) so it is easier to manipulate.
+
+Since x is an array, how do we manipulate it?
+3. Loop through each element in the array, searching for the word "function"
+4. Return list of all elements containing the word "function"
+
+
+list_all_js_function_names("/path/to/script.js")
+
+# this should return
+
+[
+    {'name':'promptUser', 'start_row':2, 'end_row':8},
+    {'name':'Array.prototype.memory_card_shuffle', 'start_row':9, 'end_row':17}
+]
+
